@@ -10,8 +10,8 @@
   },
   "scripts": {
     "dev": "bun --hot src/index.ts",
-    "build": "bun prisma migrate deploy",
-    "start": "bun prisma migrate deploy && bun src/index.ts"
+    "build": "prisma migrate deploy",
+    "start": "bun src/index.ts"
   },
   "type": "module",
   "dependencies": {
