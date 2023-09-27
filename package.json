@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "bun --hot src/index.ts",
     "build": "bun prisma migrate deploy & bun build --target=bun ./src/index.ts --outfile=dist/server.js",
-    "start": "bun dist/server.js"
+    "start": "bun prisma migrate deploy && bun src/index.ts"
   },
   "type": "module",
   "dependencies": {
